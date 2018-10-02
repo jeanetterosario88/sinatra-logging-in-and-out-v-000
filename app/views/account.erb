@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <h1>Wellcome to your account Homepage!</h1>
+    <h1>Wellcome <%= Helpers.current_user(session).username %></h1>
     <ul>
       <li>User Name: <%= Helpers.current_user(session).username %></li>
       <li>Balance: <%= Helpers.current_user(session).balance %></li>
